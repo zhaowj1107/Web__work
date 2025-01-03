@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia & David</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <!-- 密码验证模态框 -->
+    <div id="passwordModal" class="password-modal">
+        <div class="modal-content">
+            <h2 class="modal-title">David & Silvia</h2>
+            <div class="password-form">
+                <input type="password" id="passwordInput" placeholder="Enter Password" class="password-input">
+                <button id="submitBtn" class="submit-btn">Enter</button>
+            </div>
+            <p class="password-hint">Hint: Our Birthday</p>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">David & Silvia</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">The Beginning</a></li>
+                <li><a href="memories.html">Our Memory</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主标题 -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <h1 class="main-title">David & Silvia</h1>
+    </header>
+
+    <!-- 照片轮播模块 -->
+    <section class="carousel-container">
+        <div class="carousel">
+            <button class="carousel-btn prev">&lt;</button>
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="img/slide1.jpg" alt="我们的照片1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/slide2.jpg" alt="我们的照片2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/slide3.jpg" alt="我们的照片3">
+                </div>
+            </div>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+        <div class="carousel-indicators"></div>
+    </section>
+
+    <!-- 标语文字 -->
+    <section class="tagline">
+        <h2 class="couple-name">David & Silvia</h2>
+        <p class="love-story">Love Story From 2015</p>
+    </section>
+
+    <!-- David's Section -->
+    <section class="person-section">
+        <div class="person-container">
+            <div class="person-image">
+                <img src="img/David.jpg" alt="David">
+            </div>
+            <div class="person-content">
+                <!-- 右侧留白 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Silvia's Section -->
+    <section class="person-section">
+        <div class="person-container reverse">
+            <div class="person-content">
+                <!-- 左侧留白 -->
+            </div>
+            <div class="person-image">
+                <img src="img/Silvia.jpg" alt="Silvia">
+            </div>
+        </div>
+    </section>
+
+    <script src="js/carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="js/password.js"></script>
+</body>
+</html> 
